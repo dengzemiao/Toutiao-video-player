@@ -1,0 +1,14 @@
+<!-- 直接使用 -->
+<video-player
+    autoplay
+    inner-class="video-view"
+    inner-style="background-color: orange;"
+    album-id="7301931296073351730" 
+    episode-id="7301931329208189450"
+    binderror="binderror"
+    bindplay="bindplay"
+    bindtimeupdate="bindtimeupdate"
+></video-player>
+
+<!-- 组件包裹使用 -->
+<!-- <wrap-player></wrap-player>    -->

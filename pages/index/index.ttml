@@ -1,0 +1,3 @@
+<view class="video-content">
+    <button bindtap="jumpPlay">跳转播放页</button>
+</view>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "video-player":"/pages/video-player/index",
+        "wrap-player": "/pages/wrap-player/index"
+    },
+    "navigationBarTitleText":"播放页"
+}
