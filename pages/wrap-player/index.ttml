@@ -1,9 +1,15 @@
-<video-player
-    autoplay
-    inner-class="video-view"
-    album-id="7301931296073351730" 
-    episode-id="7301931329208189450"
-    binderror="binderror"
-    bindplay="bindplay"
-    bindtimeupdate="bindtimeupdate"
-></video-player>
+<view class="wrap-player">
+    <video-player
+        autoplay
+        id="my-video-player"
+        inner-class="video-view"
+        album-id="7301931296073351730" 
+        episode-id="7301931329208189450"
+        bindref="bindref"
+        binderror="binderror"
+        bindplay="bindplay"
+        bindtimeupdate="bindtimeupdate"
+    ></video-player>
+    <button bindtap="touchPlay">播放</button>
+    <button bindtap="touchPause">暂停</button>
+</view>

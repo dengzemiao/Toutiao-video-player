@@ -107,28 +107,32 @@ Component({
     }
   },
   methods: {
+    // 加载 ref
+    refHandler(ref) {
+      this.triggerEvent('ref', ref)
+    },
     // 当开始/继续播放时触发 play 事件
-    handlePlay (e) {
+    handlePlay(e) {
       this.triggerEvent('play', e)
     },
     // 当暂停播放时触发 pause 事件
-    handlePause (e) {
+    handlePause(e) {
       this.triggerEvent('pause', e)
     },
     // 当播放到末尾时触发 ended 事件
-    handleEnded (e) {
+    handleEnded(e) {
       this.triggerEvent('ended', e)
     },
     // 播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次
-    handleTimeupdate (e) {
+    handleTimeupdate(e) {
       this.triggerEvent('timeupdate', e)
     },
     // 视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction 有效值为 vertical 或 horizontal
-    handleFullscreenchange (e) {
+    handleFullscreenchange(e) {
       this.triggerEvent('fullscreenchange', e)
     },
     // 视频播放出错时触发
-    handleError (e) {
+    handleError(e) {
       this.triggerEvent('error', e)
     }
   }

@@ -1,5 +1,9 @@
-.video-view {
+.wrap-player {
     width: 100vw;
     height: 100vh;
+}
+.video-view {
+    width: 100vw;
+    height: 50vh;
     background-color: greenyellow;
 }
