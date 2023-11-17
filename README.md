@@ -4,6 +4,8 @@
 
 - 官方对接文档：<https://bytedance.larkoffice.com/docx/TsJmdbX6co33uJxi7j9cfYc2nnd>
 
+- Uniapp 对接抖音短剧播放器 video-player 坑点解决：<https://blog.csdn.net/zz00008888/article/details/134457909>
+
 - 目录结构：
 
 ```sh
