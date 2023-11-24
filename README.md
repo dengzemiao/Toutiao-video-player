@@ -12,7 +12,9 @@
 
   1、直接传 `inner-style` 样式进去，不走 `inner-class`
 
-  2、(推荐)直接给 `uniapp video-player` 设置 `class` 正常设置样式，这样 `原生 video-player` 的 `class: video-player-view` 都是宽高百分百，这样就能正常沿用外面的尺寸。
+  2、(推荐)直接给 `uniapp video-player` 设置 `class` 正常设置样式，然后给 `原生 video-player` 的 `class: video-player-view` 内部宽高百分百，这样就能正常沿用外面的尺寸。
+
+  3、(推荐)直接给 `uniapp video-player` 设置 `class` 正常设置样式，然后给 `原生 video-player` 的 `inner-style` 设置宽高百分百，这样也能正常沿用外面的尺寸。
 
 - 目录结构：
 
