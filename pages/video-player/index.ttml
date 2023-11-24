@@ -1,7 +1,7 @@
 <video-player
     id="{{ id }}"
     tt:ref="refHandler"
-    class="inner-class"
+    class="video-player-view inner-class"
     style="{{ innerStyle }}"
     album-id="{{ albumId }}" 
     episode-id="{{ episodeId }}"

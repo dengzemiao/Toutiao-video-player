@@ -1,0 +1,5 @@
+/* 兼容 uniapp 第三方混编使用，不需要可移除，详细查看 README.md */
+.video-player-view {
+  width: 100%;
+  height: 100%;
+}
