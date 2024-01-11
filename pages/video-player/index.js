@@ -1,5 +1,7 @@
 // 自定义组件参考：https://mp.kuaishou.com/docs/develop/frame/custom_comp/component_constructor.html
 // video 参考：https://bytedance.larkoffice.com/docx/TsJmdbX6co33uJxi7j9cfYc2nnd
+// 可使用 tt.canIUse('video-player') 判断是否支持最新播放器
+// 基础库 2.77.0 开始支持本组件，基础库只在抖音、抖极、抖火 23.8 及以上版本支持
 Component({
   // 外部样式属性定义，其实也就是把内部需要外部支持的 class 名称放这里导出
   // 在外部直接使用导出的名称字段关联即可，可以同时导出多个，这里是数组 ['','',...]
@@ -130,6 +132,11 @@ Component({
     // 视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction 有效值为 vertical 或 horizontal
     handleFullscreenchange(e) {
       this.triggerEvent('fullscreenchange', e)
+    },
+    // bindgetsource 表示 video-player 组件内部资源获取完成。如果使用 VideoContext 播放，需在这个时机后播放，否则可能出现播放失败。
+    // 可用 tt.canIUse('video-player.bindgetsource') 校验是否支持该事件，如果不支持需作降级处理。
+    handleGetsource (e) {
+      this.triggerEvent('getsource', e)
     },
     // 视频播放出错时触发
     handleError(e) {

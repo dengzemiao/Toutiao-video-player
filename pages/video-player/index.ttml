@@ -25,5 +25,6 @@
     bindended="handleEnded"
     bindtimeupdate="handleTimeupdate"
     bindfullscreenchange="handleFullscreenchange"
+    bindgetsource="handleGetsource"
     binderror="handleError"
 ></video-player>
